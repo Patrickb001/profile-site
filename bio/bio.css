@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  /* background-color: rgb(246, 242, 233); */
+  background-color: #f6f2e9;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* margin: 0 auto; */
+}
+
+header {
+  /* width: 80vw; */
+  /* margin: 0 auto; */
+  padding: 3rem 4.4rem;
+  /* height: 30vh; */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 48rem; */
+  font-size: 3.2rem;
+}
+
+nav > ul {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  margin-right: 16rem;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  /* color: #f5f1e6; */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:active {
+  color: #7d5e47;
+}
+
+.logo > a:link,
+.logo > a:visited {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+/* .logo > a:hover,
+.logo > a:active {
+} */
+
+.about-section-container {
+  display: flex;
+  gap: 5.4rem;
+}
+
+.about-section-container img {
+  border-radius: 3px;
+}
+
+.about-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: 46%;
+}
+
+.main-img {
+  min-width: 38rem;
+  width: 340rem;
+  max-width: 340rem;
+  height: 62rem;
+}
+
+.about-header {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 12rem;
+}
+
+.about-description {
+  letter-spacing: 0.6px;
+  font-size: 2rem;
+  line-height: 1.6;
+  width: 55%;
+  min-height: 20rem;
+  min-width: 55rem;
+}
+
+.interest-container {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.interest-basketball-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interest-reading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interest-img {
+  min-width: 34rem;
+  width: 80%;
+  height: 60%;
+}
+
+.interest-img + h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.interest-img ~ p {
+  font-weight: 500;
+  width: 42rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+  min-height: 22rem;
+}

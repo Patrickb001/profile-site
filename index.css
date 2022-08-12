@@ -4,7 +4,6 @@ Primary Color: #964B00
 
 
 
-
 */
 
 * {
@@ -17,6 +16,8 @@ html {
   font-family: "Open Sans", sans-serif;
   /* width: 100%; */
   font-size: 62.5%;
+  /* background-color: rgb(246, 242, 233); */
+
   background-image: linear-gradient(
       rgba(76, 18, 0, 0.45),
       rgba(76, 18, 0, 0.45)
