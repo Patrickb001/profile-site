@@ -22,14 +22,15 @@ html {
       rgba(76, 18, 0, 0.45),
       rgba(76, 18, 0, 0.45)
     ),
-    url("/resources/images/photo-1488229297570-58520851e868.jpg");
+    url("./resources/images/photo-1488229297570-58520851e868.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 
 body {
-  width: 75vw;
+  overflow-x:hidden ;
+  width: 85vw;
   height: 100vh;
   margin: 0 auto;
 }
@@ -47,8 +48,8 @@ header {
 
 header {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
+  justify-content: space-between;
+  /* position: relative; */
 }
 
 header,
@@ -60,9 +61,9 @@ header > div {
   font-weight: 700;
   padding: 2rem;
   background-color: rgba(60, 30, 0, 0.75);
-  position: absolute;
-  top: 22%;
-  left: 0;
+  /* position: absolute; */
+  /* top: 22%; */
+  /* left: 0; */
 }
 
 nav li {
@@ -75,7 +76,7 @@ nav > ul {
   justify-content: flex-end;
   gap: 2rem;
   background-color: rgba(60, 30, 0, 0.75);
-  padding: 2rem;
+  padding: 2.8rem 2rem;
 }
 
 nav a:link,
@@ -116,4 +117,106 @@ nav a:active {
   margin-right: 1.6rem;
   display: block;
   text-align: right;
+}
+
+@media screen and (max-width:1300px) {
+  
+  body{
+    width: 100vw;
+  }
+
+  header > div {
+    font-size: 3.2rem;
+  }
+
+  nav {
+    font-size: 2rem;
+    margin-right: 10rem;
+  } 
+
+  #main-quote-block {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #main-quote-block > * {
+    font-size: 2.2rem;
+  }
+
+  #secondary-quote {
+    margin-top: 2.4rem;
+  }
+
+  .quote-author{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  body {
+    overflow-y: hidden;
+  }
+
+  header{
+    margin-top: 2rem;
+    padding: 1.8rem 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  header > div {
+    font-size: 3.2rem;
+    padding: 1.0165rem;
+  }
+
+  nav {
+    font-size: 2rem;
+    /* margin-right: 10rem; */
+  } 
+
+  nav > ul {
+    padding: 1.8rem 1.2rem;
+  }
+
+
+  #main-quote-block {
+    margin-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #main-quote-block > * {
+    font-size: 2.2rem;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width:850px) {
+  #main-quote-block > * {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    margin-right: 0;
+  } 
+
+  .quote-author{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width:650px) {
+  header{
+    margin-top: 0.8rem;
+
+    /* margin-bottom: 2rem; */
+  }
+
+  #main-quote-block > *{
+    font-size: 1.4rem;
+  }
+
+  .quote-author{
+    font-size: 1.1rem;
+  }
 }
